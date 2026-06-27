@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: "Read latest stories from ChhinhLong Blog",
   openGraph: {
     title: "Blog | Chhinhlong Dev",
-    url: "https://chhinhlongdev.vercel.app/blog",
+    url: "https://chhinhlong-portfolio.vercel.app/blog",
     description: "Read latest stories from ChhinhLong Blog",
     images:
       "https://res.cloudinary.com/victoreke/image/upload/v1692636087/victoreke/blog.png",

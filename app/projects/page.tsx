@@ -10,11 +10,11 @@ import PageHeading from "../components/shared/PageHeading";
 
 export const metadata: Metadata = {
   title: "Projects | ChhinhLong Dev",
-  metadataBase: new URL("https://chhinhlongdev.vercel.app"),
+  metadataBase: new URL("https://chhinhlong-portfolio.vercel.app"),
   description: "Explore projects built by ChhinhLong",
   openGraph: {
     title: "Projects | ChhinhLong Dev",
-    url: "https://chhinhlongdev.vercel.app/projects",
+    url: "https://chhinhlong-portfolio.vercel.app/projects",
     description: "Explore projects built by ChhinhLong",
     images:
       "https://res.cloudinary.com/victoreke/image/upload/v1692636087/victoreke/projects.png",

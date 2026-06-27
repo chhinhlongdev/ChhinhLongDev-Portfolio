@@ -14,7 +14,7 @@ type props = {
 };
 
 export default function SharePost({ title, slug, description }: props) {
-  const blog = encodeURIComponent("https:/chhinhlongdev.vercel.app/blog/");
+  const blog = encodeURIComponent("https:/chhinhlong-portfolio.vercel.app/blog/");
   const options = [
     {
       icon: BiLogoTwitter,

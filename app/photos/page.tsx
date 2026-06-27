@@ -20,11 +20,11 @@ const images = [
 
 export const metadata: Metadata = {
   title: "Photos | ChhinhLong Dev",
-  metadataBase: new URL("https://chhinhlongdev.vercel.app/photos"),
+  metadataBase: new URL("https://chhinhlong-portfolio.vercel.app/photos"),
   description: "Explore photos taken by ChhinhLong",
   openGraph: {
     title: "Photos | Chhinhlong Dev",
-    url: "https://chhinhlongdev.vercel.app/photos",
+    url: "https://chhinhlong-portfolio.vercel.app/photos",
     description: "Explore photos taken by ChhinhLong",
     images:
       "https://res.cloudinary.com/victoreke/image/upload/v1692635149/victoreke/photos.png",

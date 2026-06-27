@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: project.coverImage
         ? urlFor(project.coverImage.image).width(1200).height(630).url()
         : fallbackImage,
-      url: `https://chhinhlongdev.vercel.app/projects/${project.slug}`,
+      url: `https://chhinhlong-portfolio.vercel.app/projects/${project.slug}`,
       title: project.name,
       description: project.tagline,
     },

@@ -9,7 +9,7 @@ export default function NotFound() {
   return (
     <NotFoundComponent
       title="Error 404!"
-      description="Oopsies! This page does not exist on chhinhlongdev.vercel.app. While you're here, you can read some featured post below."
+      description="Oopsies! This page does not exist on chhinhlong-portfolio.vercel.app. While you're here, you can read some featured post below."
     />
   );
 }
