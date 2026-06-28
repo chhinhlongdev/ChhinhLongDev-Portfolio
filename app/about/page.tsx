@@ -13,12 +13,12 @@ import RefLink from "../components/shared/RefLink";
 
 export const metadata: Metadata = {
   title: "About | ChhinhLong Dev",
-  metadataBase: new URL("https://chhinhlong.vercel.app/about"),
+  metadataBase: new URL("https://chhinhlongdev.vercel.app/about"),
   description:
     "Learn more about my skills, experience and technical background",
   openGraph: {
     title: "About | ChhinhLong Dev",
-    url: "https://chhinhlong.vercel.app/about",
+    url: "https://chhinhlongdev.vercel.app/about",
     description:
       "Learn more about my skills, experience and technical background",
     images:

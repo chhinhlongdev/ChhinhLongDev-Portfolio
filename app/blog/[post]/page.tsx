@@ -43,19 +43,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${post.title}`,
-    metadataBase: new URL(`https://chhinhlong.vercel.app/blog/${post.slug}`),
+    metadataBase: new URL(`https://chhinhlongdev.vercel.app/blog/${post.slug}`),
     description: post.description,
     publisher: post.author.name,
     keywords: post.tags,
     alternates: {
       canonical:
-        post.canonicalLink || `https://chhinhlong.vercel.app/blog/${post.slug}`,
+        post.canonicalLink || `https://chhinhlongdev.vercel.app/blog/${post.slug}`,
     },
     openGraph: {
       images:
         urlFor(post.coverImage?.image).width(1200).height(630).url() ||
         fallbackImage,
-      url: `https://chhinhlong.vercel.app/blog/${post.slug}`,
+      url: `https://chhinhlongdev.vercel.app/blog/${post.slug}`,
       title: post.title,
       description: post.description,
       type: "article",
