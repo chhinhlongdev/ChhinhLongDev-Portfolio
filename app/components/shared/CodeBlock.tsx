@@ -1,4 +1,4 @@
-import { Refractor, registerLanguage } from "react-refractor";
+import { Refractor, registerLanguage as originalRegisterLanguage } from "react-refractor";
 import js from "refractor/lang/javascript";
 import ts from "refractor/lang/typescript";
 import tsx from "refractor/lang/tsx";
@@ -15,6 +15,9 @@ import graphql from "refractor/lang/graphql";
 import json from "refractor/lang/json";
 import java from "refractor/lang/java";
 import Clipoboard from "./Clipoboard";
+
+// បង្កើតការរំលង Type checking តែមួយបន្ទាត់សម្រាប់គ្រប់ភាសាទាំងអស់
+const registerLanguage = originalRegisterLanguage as any;
 
 // Supported languages: https://prismjs.com/#supported-languages
 registerLanguage(js);
