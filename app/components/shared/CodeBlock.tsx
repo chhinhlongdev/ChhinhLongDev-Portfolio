@@ -1,4 +1,4 @@
-import Refractor from "react-refractor";
+import { Refractor } from "react-refractor";
 import js from "refractor/lang/javascript";
 import ts from "refractor/lang/typescript";
 import tsx from "refractor/lang/tsx";
