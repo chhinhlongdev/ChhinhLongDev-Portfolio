@@ -1,40 +1,40 @@
-import { Refractor, registerLanguage as originalRegisterLanguage } from "react-refractor";
-import js from "refractor/lang/javascript";
-import ts from "refractor/lang/typescript";
-import tsx from "refractor/lang/tsx";
-import jsx from "refractor/lang/jsx";
-import sql from "refractor/lang/sql";
-import bash from "refractor/lang/bash";
-import markdown from "refractor/lang/markdown";
-import css from "refractor/lang/css";
-import scss from "refractor/lang/scss";
-import python from "refractor/lang/python";
-import html from "refractor/lang/markup";
-import yaml from "refractor/lang/yaml";
-import graphql from "refractor/lang/graphql";
-import json from "refractor/lang/json";
-import java from "refractor/lang/java";
+import { Refractor, registerLanguage } from "react-refractor";
+import js from "refractor/lang/javascript.js";
+import ts from "refractor/lang/typescript.js";
+import tsx from "refractor/lang/tsx.js";
+import jsx from "refractor/lang/jsx.js";
+import sql from "refractor/lang/sql.js";
+import bash from "refractor/lang/bash.js";
+import markdown from "refractor/lang/markdown.js";
+import css from "refractor/lang/css.js";
+import scss from "refractor/lang/scss.js";
+import python from "refractor/lang/python.js";
+import html from "refractor/lang/markup.js";
+import yaml from "refractor/lang/yaml.js";
+import graphql from "refractor/lang/graphql.js";
+import json from "refractor/lang/json.js";
+import java from "refractor/lang/java.js";
 import Clipoboard from "./Clipoboard";
 
-// បង្កើតការរំលង Type checking តែមួយបន្ទាត់សម្រាប់គ្រប់ភាសាទាំងអស់
-const registerLanguage = originalRegisterLanguage as any;
+// បង្ខំឱ្យ TypeScript រំលងការឆែកមើល Type Conflict ត្រង់នេះ
+const safeRegister = registerLanguage as any;
 
 // Supported languages: https://prismjs.com/#supported-languages
-registerLanguage(js);
-registerLanguage(ts);
-registerLanguage(tsx);
-registerLanguage(jsx);
-registerLanguage(sql);
-registerLanguage(bash);
-registerLanguage(markdown);
-registerLanguage(css);
-registerLanguage(scss);
-registerLanguage(python);
-registerLanguage(html);
-registerLanguage(yaml);
-registerLanguage(graphql);
-registerLanguage(json);
-registerLanguage(java);
+safeRegister(js);
+safeRegister(ts);
+safeRegister(tsx);
+safeRegister(jsx);
+safeRegister(sql);
+safeRegister(bash);
+safeRegister(markdown);
+safeRegister(css);
+safeRegister(scss);
+safeRegister(python);
+safeRegister(html);
+safeRegister(yaml);
+safeRegister(graphql);
+safeRegister(json);
+safeRegister(java);
 
 type codeTypes = {
   value: {
