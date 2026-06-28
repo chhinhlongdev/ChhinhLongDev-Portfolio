@@ -1,4 +1,4 @@
-import { Refractor } from "react-refractor";
+import { Refractor, registerLanguage } from "react-refractor";
 import js from "refractor/lang/javascript";
 import ts from "refractor/lang/typescript";
 import tsx from "refractor/lang/tsx";
@@ -17,10 +17,7 @@ import java from "refractor/lang/java";
 import Clipoboard from "./Clipoboard";
 
 // Supported languages: https://prismjs.com/#supported-languages
-Refractor.registerLanguage(js);
-Refractor.registerLanguage(ts);
 Refractor.registerLanguage(jsx);
-Refractor.registerLanguage(tsx);
 Refractor.registerLanguage(sql);
 Refractor.registerLanguage(bash);
 Refractor.registerLanguage(markdown);
