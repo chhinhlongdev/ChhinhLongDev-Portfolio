@@ -17,18 +17,21 @@ import java from "refractor/lang/java";
 import Clipoboard from "./Clipoboard";
 
 // Supported languages: https://prismjs.com/#supported-languages
-Refractor.registerLanguage(jsx);
-Refractor.registerLanguage(sql);
-Refractor.registerLanguage(bash);
-Refractor.registerLanguage(markdown);
-Refractor.registerLanguage(css);
-Refractor.registerLanguage(scss);
-Refractor.registerLanguage(python);
-Refractor.registerLanguage(html);
-Refractor.registerLanguage(yaml);
-Refractor.registerLanguage(graphql);
-Refractor.registerLanguage(json);
-Refractor.registerLanguage(java);
+registerLanguage(js);
+registerLanguage(ts);
+registerLanguage(tsx);
+registerLanguage(jsx);
+registerLanguage(sql);
+registerLanguage(bash);
+registerLanguage(markdown);
+registerLanguage(css);
+registerLanguage(scss);
+registerLanguage(python);
+registerLanguage(html);
+registerLanguage(yaml);
+registerLanguage(graphql);
+registerLanguage(json);
+registerLanguage(java);
 
 type codeTypes = {
   value: {
